@@ -2,12 +2,11 @@ import { Controller, Get, Inject } from "@tsed/common";
 import express from "express";
 import TestService from "../../services/Test/TestService";
 
-
 @Controller("/")
 class TestController {
     @Inject(TestService)
     private readonly testService: TestService;
-    
+
     public constructor() {
     }
 
